@@ -176,7 +176,9 @@ a:hover {
 .performance-section {
   padding: 10px 20px;
 }
-
+.learning-sec1 {
+  padding: 10px 20px;
+}
 .section2 {
   padding: 5px 20px;
   display: flex;
@@ -194,6 +196,10 @@ a:hover {
   padding: 15px;
   background-color: var(--secondary-color);
   border-radius: 10px;
+}
+
+.sub-card2:hover {
+  border: 3px solid var(--primary-color);
 }
 .sub-titles {
   font-size: 12px;
@@ -219,4 +225,18 @@ a:hover {
 
 .img1 {
   width: 100%;
+}
+
+.corousel {
+  height: 260px;
+  color: var(--body-color);
+}
+
+.corousel-img {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.img2 {
+  width: fill;
 }

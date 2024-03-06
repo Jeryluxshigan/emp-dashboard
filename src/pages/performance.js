@@ -1,19 +1,12 @@
 import React from "react";
 import { Table } from "antd";
-import type { TableColumnsType } from "antd";
+
 import { Card } from "antd";
 
 const { Meta } = Card;
 
 
-interface DataType {
-  key: React.Key;
-  name: string;
-  tools: String;
-  experience: string;
-}
-
-const columns: TableColumnsType<DataType> = [
+const columns = [
   {
     title: "Project Name",
     dataIndex: "name",
@@ -27,8 +20,7 @@ const columns: TableColumnsType<DataType> = [
     dataIndex: "experience",
   },
 ];
-
-const data: DataType[] = [
+const data = [
   {
     key: "1",
     name: "Rapid",
@@ -54,10 +46,6 @@ const data: DataType[] = [
 
 function Performance() {
   const performance = "Project Experience.";
-  const imgtitile1 = "Hands on Introduction: React";
-  const imgtitile2 = "Javascript: Beginers to Advance";
-  const imgtitile3 = "Css: Advance Training";
-  const tutor = "By: Jeryluxshigan";
   return (
     <div className="main-card">
       <div className="welcome"> {performance} </div>
@@ -66,23 +54,26 @@ function Performance() {
           <img
             className="img1"
             src="https://th.bing.com/th/id/OIP.gBBaWg6UcGE2Z1wP1MJTXAHaEk?rs=1&pid=ImgDetMain"
+            alt="learning"
           />
         </div>
         <div className="sub-card2">
           <img
             className="img1"
             src="https://th.bing.com/th/id/OIP.gBBaWg6UcGE2Z1wP1MJTXAHaEk?rs=1&pid=ImgDetMain"
+            alt="learning"
           />
         </div>
         <div className="sub-card2">
           <img
             className="img1"
             src="https://th.bing.com/th/id/OIP.gBBaWg6UcGE2Z1wP1MJTXAHaEk?rs=1&pid=ImgDetMain"
+            alt="learning"
           />
         </div>
       </div>
       <div className="performance-section">
-        <Table columns={columns} dataSource={data} size="middle" />
+      <Table columns={columns} dataSource={data} size="middle" />
       </div>
     </div>
   );
