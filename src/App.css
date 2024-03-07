@@ -1,7 +1,6 @@
 /* global styles */
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
 
-
 * {
   font-family: "Poppins", sans-serif;
   --primary-color: #003682;
@@ -9,6 +8,7 @@
   --sub-color: #fafbfd;
   --body-color: #ffffff;
   --text-color: #00000000;
+  --second-text-color: #61616100;
 }
 
 .app {
@@ -40,9 +40,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 80vh;
   width: 160px;
   background-color: var(--body-color);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-card {
@@ -50,18 +51,20 @@
   margin: 15px;
   padding: 5px;
   border-radius: 10px;
+  height: 85vh;
+  overflow-y: auto;
 }
-
+.logo-card {
+  height: 50px;
+  background-color: var(--secondary-color);
+  width: 100%;
+}
 .logo {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 800;
   text-align: left;
   color: var(--primary-color);
   margin: 7px 12px;
-}
-.separator {
-  margin-top: -2px;
-  color: var(--primary-color);
 }
 
 .subtitle {
@@ -95,9 +98,9 @@
 }
 
 .name {
-  margin-left: 10px;
+  margin-left: 6px;
   color: var(--body-color);
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .sidenav {
@@ -106,6 +109,7 @@
   color: var(--primary-color);
   font-size: 14px;
   font-weight: 400;
+  margin-top: -5px;
 }
 
 .navlist {
@@ -115,7 +119,6 @@
   margin-top: 20px;
   gap: 5px;
 }
-
 
 .navlist:hover {
   background-color: var(--secondary-color);
@@ -145,13 +148,14 @@ svg {
 .footer {
   background-color: var(--primary-color);
   height: 30px;
-  margin-top: 264px;
+  margin-top: 308px;
   color: var(--body-color);
   text-align: center;
   font-size: 12px;
   align-items: center;
   justify-content: center;
   display: flex;
+  width: 100%;
 }
 
 a {
@@ -176,6 +180,12 @@ a:hover {
 }
 .section1 {
   padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.section4 {
+  margin: 15px 0px;
+  gap: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -210,6 +220,12 @@ a:hover {
 
 .sub-card2:hover {
   border: 3px solid var(--primary-color);
+}
+
+.sub-card3 {
+  padding: 15px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
 }
 .sub-titles {
   font-size: 12px;
@@ -255,7 +271,7 @@ a:hover {
   padding: 10px;
 }
 
-.timeline{
+.timeline {
   margin-top: 15px;
 }
 
@@ -263,4 +279,96 @@ a:hover {
   padding-top: 15px;
   color: var(--primary-color);
   font-weight: 600;
+}
+
+.cover-section {
+  padding: 5px 20px;
+}
+
+.profile-content {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #f9fbff;
+  border-radius: 15px;
+}
+
+.profile-card {
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f9fbff;
+  border-radius: 15px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: bisque;
+}
+
+.profile-name {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.experience {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.position {
+  font-size: 12px;
+  color: #9e9e9e;
+  margin-bottom: 5px;
+}
+
+.about {
+  font-size: 12px;
+  text-align: center;
+}
+
+.skills {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.skills-set {
+  margin-bottom: 8px;
+  display: flex;
+  gap: 10px;
+}
+
+.skill-name {
+  border-radius: 8px;
+  padding: 4px 12px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  font-size: 12px;
+}
+
+.content-1 {
+  padding: 10px;
+}
+.btn {
+  display: flex;
+  justify-content: end;
+}
+.edit {
+  background-color: var(--primary-color);
+  color: var(--body-color);
+  font-size: 14px;
+}
+
+.edit:hover {
+  background-color: var(--body-color);
+  color: var(--text-color);
 }

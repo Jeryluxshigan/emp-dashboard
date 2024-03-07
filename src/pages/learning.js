@@ -1,7 +1,6 @@
 import React from "react";
 import { Carousel } from "antd";
 import { Calendar, theme } from "antd";
-import { ClockCircleOutlined } from "@ant-design/icons";
 import { Timeline } from "antd";
 const onPanelChange = (value, mode) => {
   console.log(value.format("YYYY-MM-DD"), mode);

@@ -10,8 +10,8 @@ function Navbar() {
       <div className="nav-elements">
         <svg 
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          width="16"
+          height="16"
           fill="#ffffff"
           class="bi bi-bell"
           viewBox="0 0 16 16"
@@ -22,8 +22,8 @@ function Navbar() {
         <div className="name"> {username} </div>
         <svg 
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          width="16"
+          height="16"
           fill="#ffffff"
           class="bi bi-box-arrow-right"
           viewBox="0 0 16 16"

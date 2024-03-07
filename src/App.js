@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Sidebar from "./components/sidebar";
 import Dashboard from "./pages/dashboard";
-import Performance from "./pages/performance";
 import Learning from "./pages/learning";
+import Profile from "./pages/profile";
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
           <BrowserRouter>
           <Routes>
             <Route exact path="Dashboard" Component={Dashboard}/>
-              <Route exact path="Performance" Component={Performance }/>
               <Route exact path="Learning" Component={Learning }/>
+              <Route exact path="Profile" Component={Profile }/>
           </Routes>
           </BrowserRouter>
         </div>
