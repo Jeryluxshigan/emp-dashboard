@@ -1,9 +1,10 @@
 /* global styles */
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
 
+
 * {
   font-family: "Poppins", sans-serif;
-  --primary-color: #011970;
+  --primary-color: #003682;
   --secondary-color: #f7f8ff;
   --sub-color: #fafbfd;
   --body-color: #ffffff;
@@ -32,6 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1000;
 }
 
 .sidebar {
@@ -114,6 +116,7 @@
   gap: 5px;
 }
 
+
 .navlist:hover {
   background-color: var(--secondary-color);
 }
@@ -166,13 +169,20 @@ a:hover {
   color: var(--primary-color);
   font-weight: 600;
 }
-
+.section {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+}
 .section1 {
   padding: 5px 20px;
   display: flex;
   justify-content: space-between;
 }
-
+.img-card {
+  display: flex;
+  flex-wrap: wrap;
+}
 .performance-section {
   padding: 10px 20px;
 }
@@ -239,4 +249,18 @@ a:hover {
 
 .img2 {
   width: fill;
+}
+
+.datepicker {
+  padding: 10px;
+}
+
+.timeline{
+  margin-top: 15px;
+}
+
+.timeline-title {
+  padding-top: 15px;
+  color: var(--primary-color);
+  font-weight: 600;
 }
