@@ -5,23 +5,24 @@ import Sidebar from "./components/sidebar";
 import Dashboard from "./pages/dashboard";
 import Learning from "./pages/learning";
 import Profile from "./pages/profile";
+import Settings from "./pages/settings";
 
 function App() {
   return (
-      <div className="app">
-        <Sidebar />
-        <Navbar />
-        <div className="main-content">
-          <BrowserRouter>
+    <div className="app">
+      <Sidebar />
+      <Navbar />
+      <div className="main-content">
+        <BrowserRouter>
           <Routes>
-            <Route exact path="Dashboard" Component={Dashboard}/>
-              <Route exact path="Learning" Component={Learning }/>
-              <Route exact path="Profile" Component={Profile }/>
+            <Route exact path="Dashboard" element={<Dashboard />} />
+            <Route exact path="/Learning" element={<Learning />} />
+            <Route exact path="/Profile" element={<Profile />} />
+            <Route exact path="/Settings" element={<Settings />} />
           </Routes>
-          </BrowserRouter>
-        </div>
+        </BrowserRouter>
       </div>
-    
+    </div>
   );
 }
 

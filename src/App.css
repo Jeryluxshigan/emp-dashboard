@@ -183,9 +183,16 @@ a:hover {
   display: flex;
   justify-content: space-between;
 }
+
 .section4 {
   margin: 15px 0px;
   gap: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section5 {
+  padding: 5px 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -303,6 +310,14 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.profile-card2 {
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid #f9fbff;
+  border-radius: 15px;
+  width: 100%;
+}
+
 .profile-img {
   width: 100px;
   height: 100px;
@@ -371,4 +386,83 @@ a:hover {
 .edit:hover {
   background-color: var(--body-color);
   color: var(--text-color);
+}
+
+.sub-sec-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.settings-title1 {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.default {
+  margin-right: 15px;
+}
+
+.context1 {
+  font-size: 12px;
+}
+
+.billing-card {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 20px 20px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.sub-sec-2 {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 100px;
+}
+
+.renewal {
+  font-size: 10px;
+  color: #6d6d6d;
+}
+
+.bill-period {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.bill-title-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.change {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: orange;
+  text-decoration: underline;
+}
+
+.form-sub1 {
+  display: flex;
+  gap: 50px;
+  margin-top: 15px;
+}
+
+.placeholder {
+  padding-right: 70px;
+}
+
+.sub-sec-3 {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 20px;
+}
+
+.upload {
+  margin-top: 10px;
 }
